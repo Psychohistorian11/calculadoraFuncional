@@ -8,6 +8,7 @@
 </head>
 <body>
   <div class="calculator">
+    <h2> Calculadora Funcional</h2>
     <input type="text" id="display" readonly>
     <div class="buttons">
       <button onclick="appendToDisplay('1')">1</button>
@@ -25,6 +26,8 @@
       <button onclick="appendToDisplay('0')">0</button>
       <button onclick="appendToDisplay('*')">*</button>
       <button onclick="appendToDisplay('/')">/</button>
+      <button onclick="appendToDisplay('^')">^</button> <!-- Función anónima para potencia -->
+      <button onclick="appendToDisplay('!')">!</button> 
       <button onclick="calculate()">=</button>
     </div>
   </div>
