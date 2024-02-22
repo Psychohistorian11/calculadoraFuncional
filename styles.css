@@ -27,6 +27,8 @@ body {
     width: 200px;
     font-size: 18px;
     margin-bottom: 10px;
+    text-align: center;
+    background-color: #3B8D96;
   }
   
   .buttons {
