@@ -14,11 +14,11 @@ const dividir = (a, b) => (b !== 0 ? a / b : "Error: División por cero");
 const calcularOperaciones = (operacion, numeros) => {
   switch (operacion) {
     case "+":
-      return numeros.reduce(sumar, 0);
+      return numeros.reduce(sumar);
     case "-":
       return numeros.reduce(restar);
     case "*":
-      return numeros.reduce(multiplicar, 1);
+      return numeros.reduce(multiplicar);
     case "/":
       return numeros.reduce(dividir);
     case "^":
