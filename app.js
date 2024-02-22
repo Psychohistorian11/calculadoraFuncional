@@ -9,7 +9,6 @@ const restar = (a, b) => a - b;
 const multiplicar = (a, b) => a * b;
 const dividir = (a, b) => (b !== 0 ? a / b : "Error: División por cero");
 
-
 //-------------------Funciones de orden superior------------------
 const calcularOperaciones = (operacion, numeros) => {
   switch (operacion) {
