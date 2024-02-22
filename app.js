@@ -47,23 +47,21 @@ function appendToDisplay(value) {
 
 function calculate() {
     try {
-      // Convertir la expresión matemática a un array de números y operadores
+ 
       const expressionArray = displayValue.match(/[]?([.0-9]+|[+\-*/!^])/g);
       console.log(expressionArray)
       
-      // Separar los números y operadores
       const numeros = expressionArray.filter((element, index) => index % 2 === 0).map(Number);
       const operadores = expressionArray.filter((element, index) => index % 2 !== 0);
       console.log("numeros:" + numeros)
       console.log("operadores:" + operadores[0][0])
-  
-      // Calcular el resultado usando las funciones puras y de orden superior
+
+      //----------------------------------LLamar a la calculadora----------------------------
+      
       const resultado = calcularOperaciones(operadores[0][0], numeros);
   
-      // Mostrar el resultado en el display
       document.getElementById('display').value = resultado;
       
-      // Reiniciar la variable de la expresión
       displayValue = resultado.toString();
     } catch (error) {
       document.getElementById('display').value = 'Error';
