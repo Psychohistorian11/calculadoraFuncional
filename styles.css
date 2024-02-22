@@ -4,11 +4,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    
+    background-image: url('f.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el contenedor */
+    background-position: center; /* Centrar la imagen de fondo */
   }
   
   .calculator { 
     text-align: center;
+    background-color: white; /* Color de fondo sólido para el div */
+    width: 240px; /* Ancho del div */
+    height: auto; /* Altura del div */
+    margin: auto; /* Centrar el div horizontalmente */
+    margin-top: auto; /* Espacio superior para separarlo del borde superior */
+    border: 30px solid whitesmoke; /* Borde alrededor del div */
   }
   
   #display {
